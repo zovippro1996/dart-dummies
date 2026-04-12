@@ -2,9 +2,19 @@
 
 Tracking progress:
 
-https://docs.flutter.dev/install/quick - Set up and test drive Flutter (checked)
+## https://docs.flutter.dev/install/quick - Set up and test drive Flutter (checked)
 
-https://docs.flutter.dev/platform-integration/android/setup - Set up Android development
+## https://docs.flutter.dev/platform-integration/android/setup - Set up Android development (checked)
 
 - Set up Android tooling (done)
-- Set up an Android device
+- Set up an Android device (done)
+
+## https://docs.flutter.dev/learn/pathway 
+
+### Set up dev environment (done)
+
+### Complete the dart Getting Started Tutorial
+
+- Build your first (cli) app (done)
+- Add interactivity to your app (done)
+- Write async code
