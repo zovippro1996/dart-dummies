@@ -17,4 +17,7 @@ Tracking progress:
 
 - Build your first (cli) app (done)
 - Add interactivity to your app (done)
-- Write async code
+- Write async code (done)
+- Organize code with packages and library (done)
+- Define relationships with classes (done)
+- Handle errors gracefully
