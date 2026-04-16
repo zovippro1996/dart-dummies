@@ -5,5 +5,6 @@ library;
 
 export 'src/arguments.dart';
 export 'src/command_runner_base.dart';
+export 'src/console.dart'; // Add this line
 export 'src/exceptions.dart'; // Add this line
 export 'src/help_command.dart';
