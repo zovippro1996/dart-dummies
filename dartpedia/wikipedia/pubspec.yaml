@@ -1,5 +1,4 @@
-name: cli
-publish_to: none
+name: wikipedia
 description: A sample command-line application.
 version: 1.0.0
 resolution: workspace
@@ -9,10 +8,7 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  http: ^1.6.0
   path: ^1.9.0
-  command_runner:
-    path: ../command_runner # Points to your local command_runner package
 
 dev_dependencies:
   lints: ^6.0.0

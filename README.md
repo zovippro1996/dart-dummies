@@ -21,4 +21,6 @@ Tracking progress:
 - Organize code with packages and library (done)
 - Define relationships with classes (done)
 - Handle errors gracefully (done)
-- Extend your app with enums and extensions
+- Extend your app with enums and extensions (done)
+- Polish CLI app (done)
+- Test your app & code
