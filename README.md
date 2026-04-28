@@ -24,4 +24,5 @@ Tracking progress:
 - Extend your app with enums and extensions (done)
 - Polish CLI app (done)
 - Test your app & code (done)
-- Fetch data from Internet
+- Fetch data from Internet (done)
+- Add logging for debugging and monitoring (done)

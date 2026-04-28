@@ -1,20 +1,3 @@
-import 'package:command_runner/command_runner.dart';
-
-const version = '0.0.1';
-
-void main(List<String> arguments) {
-  var commandRunner = CommandRunner(
-    onOutput: (String output) async {
-      await write(output);
-    },
-    onError: (Object error) async {
-      if (error is Error) {
-        throw error;
-      }
-      if (error is Exception) {
-        print(error);
-      }
-    },
-  )..addCommand(HelpCommand());
-  commandRunner.run(arguments);
-}
+export 'src/commands/get_article.dart';
+export 'src/commands/search.dart';
+export 'src/logger.dart';
