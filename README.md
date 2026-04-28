@@ -13,7 +13,7 @@ Tracking progress:
 
 ### Set up dev environment (done)
 
-### Complete the dart Getting Started Tutorial - https://dart.dev/learn/tutorial 
+### Complete the dart Getting Started Tutorial - https://dart.dev/learn/tutorial (done)
 
 - Build your first (cli) app (done)
 - Add interactivity to your app (done)
