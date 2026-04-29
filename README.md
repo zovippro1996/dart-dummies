@@ -26,3 +26,13 @@ Tracking progress:
 - Test your app & code (done)
 - Fetch data from Internet (done)
 - Add logging for debugging and monitoring (done)
+
+### Complete the Flutter Getting Started tutorial - https://docs.flutter.dev/learn/pathway/tutorial
+- Quick install (done)
+  - Install Flutter (done)
+- Introduction to Flutter UI
+  - Create a Flutter app (done)
+  - Widget fundamentals (done)
+  - Layout widgets on a screen (done)
+  - DevTools (done)
+  - Handle user input
