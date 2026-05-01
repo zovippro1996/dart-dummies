@@ -30,11 +30,12 @@ Tracking progress:
 ### Complete the Flutter Getting Started tutorial - https://docs.flutter.dev/learn/pathway/tutorial
 - Quick install (done)
   - Install Flutter (done)
-- Introduction to Flutter UI
+- Introduction to Flutter UI (done)
   - Create a Flutter app (done)
   - Widget fundamentals (done)
   - Layout widgets on a screen (done)
   - DevTools (done)
   - Handle user input (done)
   - Stateful widgets (done)
-  - Add implicit animations
+  - Add implicit animations (done)
+- State in Flutter apps
