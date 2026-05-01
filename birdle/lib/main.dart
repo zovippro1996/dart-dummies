@@ -21,11 +21,14 @@ class MainApp extends StatelessWidget {
   }
 }
 
-class GamePage extends StatelessWidget {
+class GamePage extends StatefulWidget {
   GamePage({super.key});
 
-  // This object is part of the game.dart file.
-  // It manages wordle logic, and is outside the scope of this tutorial.
+  @override
+  State<GamePage> createState() => _GamePageState();
+}
+
+class _GamePageState extends State<GamePage> {
   final Game _game = Game();
 
   @override
@@ -33,11 +36,26 @@ class GamePage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
-        spacing: 5.0,
         children: [
-          for (final guess in _game.guesses) Row(spacing: 5.0, children: [
-            for (final letter in guess) Tile(letter.char, letter.type),
-          ]),
+          for (var guess in _game.guesses)
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                for (var letter in guess)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 2.5,
+                      vertical: 2.5,
+                    ),
+                    child: Tile(letter.char, letter.type),
+                  ),
+              ],
+            ),
+          GuessInput(onSubmitGuess: (String guess) {
+            setState(() {
+              _game.guess(guess);
+            });
+          }),
         ],
       ),
     );
@@ -71,5 +89,55 @@ class Tile extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class GuessInput extends StatelessWidget {
+  GuessInput({super.key, required this.onSubmitGuess});
+
+  final void Function(String) onSubmitGuess;
+
+  final TextEditingController _textEditingController = TextEditingController();
+
+  final FocusNode _focusNode = FocusNode();
+
+  @override
+  Widget build(BuildContext context) {
+    // You'll build the UI in the next steps.
+    return Row(
+      children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              maxLength: 5,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(35)),
+                ),
+              ),
+              controller: _textEditingController,
+              autofocus: true,
+              onSubmitted: (input) {
+                _onSubmit();
+              },
+            ),
+          ),
+        ),
+        IconButton(
+          padding: EdgeInsets.zero,
+          onPressed: () {
+            _onSubmit();
+          },
+          icon: const Icon(Icons.arrow_circle_up),
+        ),
+      ],
+    );
+  }
+
+  void _onSubmit() {
+    onSubmitGuess(_textEditingController.text.trim());
+    _textEditingController.clear();
+    _focusNode.requestFocus();
   }
 }

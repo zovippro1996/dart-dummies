@@ -35,4 +35,6 @@ Tracking progress:
   - Widget fundamentals (done)
   - Layout widgets on a screen (done)
   - DevTools (done)
-  - Handle user input
+  - Handle user input (done)
+  - Stateful widgets (done)
+  - Add implicit animations
