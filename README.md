@@ -38,4 +38,9 @@ Tracking progress:
   - Handle user input (done)
   - Stateful widgets (done)
   - Add implicit animations (done)
-- State in Flutter apps
+- State in Flutter apps (done)
+  - The state management project (done)
+  - Make Http Requests (done)
+  - Use ChangeNotifier to update app state (done)
+  - Use ListenableBuilder to update App UI (done)
+- Flutter UI 102
